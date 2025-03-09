@@ -15,6 +15,8 @@ def audio_to_text(audio_file):
         dict: 一個字典，包含兩個鍵：
               - 'zh-TW': 中文辨識結果，
               - 'en-US': 英文辨識或翻譯結果。
+
+              
     """
     # 檢查 GPU 是否可用，並設定運行裝置
     device = "cuda" if torch.cuda.is_available() else "cpu"
