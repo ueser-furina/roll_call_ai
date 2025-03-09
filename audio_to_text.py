@@ -42,6 +42,8 @@ def audio_to_text(audio_file):
         # translation_result = model.transcribe(audio_file, task="translate")
         # transcriptions["zh-TW"] = translation_result.get("text", "").strip()
 
+
+
     print(f"Detected language: {detected_language}")
     print(f"Transcription (zh-TW): {transcriptions['zh-TW']}")
     print(f"Transcription (en-US): {transcriptions['en-US']}")
